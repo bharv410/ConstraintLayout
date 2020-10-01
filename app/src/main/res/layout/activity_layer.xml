@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayerActivity">
+
+    <android.support.constraint.helper.Layer
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button9,button10,button11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@id/layer"
+        app:layout_constraintStart_toStartOf="@id/layer"
+        app:layout_constraintTop_toTopOf="@id/layer" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@id/layer"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toTopOf="@id/layer" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@id/layer"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toTopOf="@id/layer" />
+
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Layer Playground"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
