@@ -14,6 +14,7 @@ class LayerActivity : AppCompatActivity() {
 
     lateinit var layer: Layer
 
+    var rotateVar = 45f
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layer)
@@ -23,10 +24,12 @@ class LayerActivity : AppCompatActivity() {
 
         layer.setOnClickListener(View.OnClickListener {
 //            rotateView(findViewById(R.id.button10))
-            funAnimation(layer)
+//            funAnimation(layer)
 
+            layer.rotation = rotateVar
+            rotateVar = rotateVar + rotateVar
 
-
+//            layer.translationX = 50f
 
 //            circularRevealCard(findViewById(R.id.button10))
         })
